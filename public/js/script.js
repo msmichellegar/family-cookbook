@@ -4,13 +4,16 @@ if (window.location.pathname === "/") {
     // get all recipes
     $.ajax('/api/recipe/get/all', {
         success: function(recipesData) {
+            // display recipes
             displayRecipesGallery(recipesData);
         }
     });
 
-    // display recipes
-    function displayRecipesGallery (recipes) {
-        $("#recipes-gallery").append(recipes);
-    }
+}
 
+function displayRecipesGallery (recipes) {
+    for (var i=0; i < recipes.length; i++) {
+        var galleryItem = "<div><p>" + recipes[i].title + "</p></div>";
+        $("#recipes-gallery").append(galleryItem);
+    }
 }

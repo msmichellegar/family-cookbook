@@ -4,7 +4,7 @@
   "description": "A holiday project, digitising my extended family's recipes. Up until now, my family's recipes have existed as a PDF that my Aunt put together as a Christmas gift several years ago. I'm now putting these recipes online so they're more easily-accessible for those who want to cook my mother's lasagne.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test/*",
     "start": "node server.js"
   },
   "repository": {

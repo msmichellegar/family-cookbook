@@ -70,14 +70,15 @@ html {
 h1 {
   font-family: 'Grandesign-Neue-Roman-Bold'; }
 
-h2, h4 {
+h2, h4, label {
   font-family: 'Yanone-Kaffeesatz';
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-i {
+i, input[type="submit"] {
   font-family: 'Berenis-ADF-Pro-Italic';
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: lowercase; }
 
 p, li {
   font-family: 'OPTIBodoniAntiqua-Medium';
@@ -126,7 +127,7 @@ header {
       width: 250px; }
 
 .recipes-gallery {
-  min-height: 50vh;
+  min-height: 30vh;
   padding: 50px 10px;
   text-align: center; }
   .recipes-gallery h2 {
@@ -208,5 +209,35 @@ header {
     .recipe .directions p, .recipe .directions li {
       font-size: 18px;
       line-height: 1.3; }
+
+.recipe-form {
+  margin: 50px auto;
+  width: 70%; }
+  .recipe-form label, .recipe-form input, .recipe-form textarea {
+    display: block; }
+  .recipe-form label {
+    margin-bottom: 5px; }
+  .recipe-form input[type="text"], .recipe-form textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 500px; }
+  .recipe-form textarea {
+    height: 200px; }
+  .recipe-form div {
+    background-color: #8BC13F;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 160px; }
+  .recipe-form input[type="submit"] {
+    background-color: #8BC13F;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    cursor: pointer;
+    height: 30px;
+    font-size: 20px;
+    width: 140px; }
 
 /*# sourceMappingURL=main.css.map */

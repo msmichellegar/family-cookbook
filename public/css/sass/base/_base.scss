@@ -6,15 +6,16 @@ h1 {
     font-family: 'Grandesign-Neue-Roman-Bold';
 }
 
-h2, h4 {
+h2, h4, label {
     font-family: 'Yanone-Kaffeesatz';
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-i {
+i, input[type="submit"] {
     font-family: 'Berenis-ADF-Pro-Italic';
     letter-spacing: 2px;
+    text-transform: lowercase;
 }
 
 p, li {

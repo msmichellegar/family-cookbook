@@ -9,23 +9,24 @@
         <nav>
             <a href="/"><h1>Barron Family Cookbook</h1></a>
         </nav>
-        <p>Hello recipe!</p>
-        <form method="post" action="/api/recipe/add">
-            <label>Title</label>
-            <input type="text" name="title"></input>
-            <label>Author</label>
-            <input type="text" name="author"></input>
-            <label>Background</label>
-            <input type="text" name="background"></input>
-            <label>Ingredients</label>
-            <input type="text" name="ingredients"></input>
-            <label>Cooking Time</label>
-            <input type="text" name="time"></input>
-            <label>Directions</label>
-            <input type="text" name="directions"></input>
-            <label>Image</label>
-            <input type="text" name="image"></input>
-            <input type="submit">
-        </form>
+        <section class="recipe-form">
+            <form method="post" action="/api/recipe/add">
+                <label>Title:</label>
+                <input type="text" name="title"></input>
+                <label>Author:</label>
+                <input type="text" name="author"></input>
+                <label>Background:</label>
+                <input type="text" name="background"></input>
+                <label>Ingredients:</label>
+                <textarea type="text" name="ingredients"></textarea>
+                <label>Cooking Time:</label>
+                <input type="text" name="time"></input>
+                <label>Directions:</label>
+                <textarea type="text" name="directions"></textarea>
+                <label>Image URL:</label>
+                <input type="text" name="image"></input>
+                <div><input type="submit"></div>
+            </form>
+        </section>
     </body>
 </html>

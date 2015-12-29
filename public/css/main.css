@@ -94,6 +94,9 @@ nav {
     letter-spacing: 2px;
     margin: 20px 10px 20px 10px;
     text-transform: lowercase; }
+  @media (max-width: 650px) {
+    nav h1 {
+      font-size: 40px; } }
   nav p {
     font-size: 26px;
     margin-top: 20px; }
@@ -107,6 +110,9 @@ header {
   height: 500px;
   padding: 0 0 80px 0;
   text-align: center; }
+  @media (max-width: 650px) {
+    header {
+      height: 300px; } }
   header .button {
     background-color: #333333;
     box-sizing: border-box;
@@ -130,8 +136,15 @@ header {
   min-height: 30vh;
   padding: 50px 10px;
   text-align: center; }
+  @media (max-width: 650px) {
+    .recipes-gallery {
+      padding: 30px 5px; } }
   .recipes-gallery h2 {
-    font-size: 40px; }
+    font-size: 40px;
+    padding-bottom: 15px; }
+  @media (max-width: 650px) {
+    .recipes-gallery h2 {
+      font-size: 30px; } }
   .recipes-gallery .recipe-block {
     box-sizing: border-box;
     display: inline-block;
@@ -140,12 +153,19 @@ header {
     padding: 10px 10px 15px 10px;
     text-align: center;
     width: 375px; }
+    @media (max-width: 650px) {
+      .recipes-gallery .recipe-block {
+        margin: 10px 5px 10px 5px;
+        padding: 0; } }
     .recipes-gallery .recipe-block img {
       box-sizing: border-box;
       height: 300px;
       object-fit: cover;
-      padding: 5px;
       width: 100%; }
+    @media (max-width: 650px) {
+      .recipes-gallery .recipe-block img {
+        height: 300px;
+        width: 100%; } }
     .recipes-gallery .recipe-block p {
       color: black;
       font-size: 20px;

@@ -8,6 +8,10 @@ header {
     padding: 0 0 80px 0;
     text-align: center;
 
+    @media (max-width: 650px) {
+        height: 300px;
+    }
+
     .button {
         background-color: #333333;
         box-sizing: border-box;
@@ -37,8 +41,19 @@ header {
     padding: 50px 10px;
     text-align: center;
 
+    @media (max-width: 650px) {
+        padding: 30px 5px;
+    }
+
     h2 {
         font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    @media (max-width: 650px) {
+        h2 {
+            font-size: 30px;
+        }
     }
 
     .recipe-block {
@@ -50,12 +65,23 @@ header {
         text-align: center;
         width: 375px;
 
+        @media (max-width: 650px) {
+            margin: 10px 5px 10px 5px;
+            padding: 0;
+        }
+
         img {
             box-sizing: border-box;
             height: 300px;
             object-fit: cover;
-            padding: 5px;
             width: 100%;
+        }
+
+        @media (max-width: 650px) {
+            img {
+                height: 300px;
+                width: 100%;
+            }
         }
 
         p {

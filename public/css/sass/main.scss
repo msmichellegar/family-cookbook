@@ -1,4 +1,8 @@
-@import "reset";
-@import "fonts";
-@import "mixins";
-@import "home";
+@import "base/reset";
+@import "base/fonts";
+@import "base/mixins";
+@import "base/variables";
+@import "base/base";
+@import "components/nav";
+@import "views/home";
+@import "views/recipe";

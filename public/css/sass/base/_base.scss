@@ -1,0 +1,23 @@
+html {
+    color: $black;
+}
+
+h1 {
+    font-family: 'Grandesign-Neue-Roman-Bold';
+}
+
+h2, h4 {
+    font-family: 'Yanone-Kaffeesatz';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+i {
+    font-family: 'Berenis-ADF-Pro-Italic';
+    letter-spacing: 2px;
+}
+
+p, li {
+    font-family: 'OPTIBodoniAntiqua-Medium';
+    letter-spacing: 1px;
+}

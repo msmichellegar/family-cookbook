@@ -49,14 +49,44 @@ button {
   src: url("/static/public/fonts/Grandesign-Neue-Roman-Bold.ttf.woff") format("woff"), url("/static/public/fonts/Grandesign-Neue-Roman-Bold.ttf.svg#Grandesign-Neue-Roman-Bold") format("svg"), url("/static/public/fonts/Grandesign-Neue-Roman-Bold.ttf.eot"), url("/static/public/fonts/Grandesign-Neue-Roman-Bold.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Yanone-Kaffeesatz';
+  src: url("/static/public/fonts/Yanone-Kaffeesatz.ttf.woff") format("woff"), url("/static/public/fonts/Yanone-Kaffeesatz.ttf.svg#Yanone-Kaffeesatz") format("svg"), url("/static/public/fonts/Yanone-Kaffeesatz.ttf.eot"), url("/static/public/fonts/Yanone-Kaffeesatz.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Berenis-ADF-Pro-Italic';
+  src: url("/static/public/fonts/Berenis-ADF-Pro-Italic.ttf.woff") format("woff"), url("/static/public/fonts/Berenis-ADF-Pro-Italic.ttf.svg#Berenis-ADF-Pro-Italic") format("svg"), url("/static/public/fonts/Berenis-ADF-Pro-Italic.ttf.eot"), url("/static/public/fonts/Berenis-ADF-Pro-Italic.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'OPTIBodoniAntiqua-Medium';
+  src: url("/static/public/fonts/OPTIBodoniAntiqua-Medium.ttf.woff") format("woff"), url("/static/public/fonts/OPTIBodoniAntiqua-Medium.ttf.svg#OPTIBodoniAntiqua-Medium") format("svg"), url("/static/public/fonts/OPTIBodoniAntiqua-Medium.ttf.eot"), url("/static/public/fonts/OPTIBodoniAntiqua-Medium.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  color: #333333; }
+
 h1 {
   font-family: 'Grandesign-Neue-Roman-Bold'; }
 
-h2, p {
-  font-family: 'Raleway', sans-serif; }
+h2, h4 {
+  font-family: 'Yanone-Kaffeesatz';
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+i {
+  font-family: 'Berenis-ADF-Pro-Italic';
+  letter-spacing: 2px; }
+
+p, li {
+  font-family: 'OPTIBodoniAntiqua-Medium';
+  letter-spacing: 1px; }
 
 nav {
   text-align: center; }
+  nav a {
+    text-decoration: none; }
   nav h1 {
     color: #EF4229;
     font-size: 60px;
@@ -74,7 +104,7 @@ header {
   box-sizing: border-box;
   display: flex;
   height: 500px;
-  padding: 0 0 100px 0;
+  padding: 0 0 80px 0;
   text-align: center; }
   header .button {
     background-color: #333333;
@@ -90,63 +120,93 @@ header {
       color: #FFF;
       cursor: pointer;
       height: 50px;
-      font-size: 20px;
+      font-size: 24px;
       font-style: italic;
       text-transform: lowercase;
       width: 250px; }
 
-.title {
-  box-sizing: border-box;
-  height: 75px;
-  text-align: center;
-  padding: 50px 100px 0 50px; }
-  .title h2 {
-    font-size: 40px; }
-  .title button {
-    background-color: lightblue;
-    border: solid 1px lightgrey;
-    clear: both;
-    display: block;
-    float: right;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 10px 15px; }
-  .title button:hover {
-    background-color: white;
-    cursor: pointer; }
-
 .recipes-gallery {
-  padding: 50px;
+  min-height: 50vh;
+  padding: 50px 10px;
   text-align: center; }
-
-.recipe-block {
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  border: solid 1px lightgrey;
-  display: inline-block;
-  height: 425px;
-  margin: 20px;
-  padding: 10px 10px 15px 10px;
-  text-align: center;
-  width: 375px; }
-  .recipe-block img {
-    border: solid 1px lightgrey;
+  .recipes-gallery h2 {
+    font-size: 40px; }
+  .recipes-gallery .recipe-block {
     box-sizing: border-box;
-    height: 300px;
-    object-fit: cover;
-    padding: 5px;
-    width: 100%; }
-  .recipe-block p {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px;
-    text-decoration: none; }
+    display: inline-block;
+    min-height: 375px;
+    margin: 20px;
+    padding: 10px 10px 15px 10px;
+    text-align: center;
+    width: 375px; }
+    .recipes-gallery .recipe-block img {
+      box-sizing: border-box;
+      height: 300px;
+      object-fit: cover;
+      padding: 5px;
+      width: 100%; }
+    .recipes-gallery .recipe-block p {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px;
+      text-decoration: none; }
+    .recipes-gallery .recipe-block hr {
+      color: #B0B0B0;
+      text-decoration: none;
+      width: 40%; }
+    .recipes-gallery .recipe-block h4 {
+      color: #EF4229;
+      text-decoration: none; }
 
-.recipe-block:hover {
-  transform: scale(1.01); }
+.recipe {
+  margin: 50px auto;
+  width: 70%; }
+  .recipe .title {
+    border: 2px solid #8BC13F;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 50px 100px;
+    text-align: left; }
+    .recipe .title h2 {
+      display: block;
+      font-size: 40px; }
+    .recipe .title h4 {
+      color: #8BC13F;
+      padding-top: 10px; }
+  .recipe .content-row-one {
+    display: flex;
+    justify-content: space-between; }
+    .recipe .content-row-one img {
+      border: 2px solid #333333;
+      box-sizing: border-box;
+      height: 400px;
+      margin-bottom: 30px;
+      object-fit: cover;
+      width: 60%; }
+    .recipe .content-row-one .background {
+      box-sizing: border-box;
+      border: 2px solid #B0B0B0;
+      margin-bottom: 30px;
+      padding: 30px;
+      vertical-align: top;
+      width: 38%; }
+      .recipe .content-row-one .background h2 {
+        font-size: 26px;
+        padding-bottom: 10px; }
+      .recipe .content-row-one .background p {
+        font-size: 18px;
+        line-height: 1.3; }
+  .recipe .directions {
+    border: 2px solid #B0B0B0;
+    padding: 30px; }
+    .recipe .directions h2 {
+      font-size: 26px;
+      padding-bottom: 10px; }
+    .recipe .directions ul, .recipe .directions .ingredients {
+      padding-bottom: 30px; }
+    .recipe .directions p, .recipe .directions li {
+      font-size: 18px;
+      line-height: 1.3; }
 
 /*# sourceMappingURL=main.css.map */

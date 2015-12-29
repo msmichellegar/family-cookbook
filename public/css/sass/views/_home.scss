@@ -1,0 +1,80 @@
+header {
+    align-items: flex-end;
+    background-image: url('http://www.hugscafe.org/wp-content/uploads/2014/05/157_1background3.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    height: 500px;
+    padding: 0 0 80px 0;
+    text-align: center;
+
+    .button {
+        background-color: #333333;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 70px;
+        margin: 0 auto;
+        padding: 10px;
+        width: 270px;
+
+        button {
+            background-color: #333333;
+            border: 1px solid white;
+            color: #FFF;
+            cursor: pointer;
+            height: 50px;
+            font-size: 24px;
+            font-style: italic;
+            text-transform: lowercase;
+            width: 250px;
+        }
+    }
+
+}
+
+.recipes-gallery {
+    min-height: 50vh;
+    padding: 50px 10px;
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .recipe-block {
+        box-sizing: border-box;
+        display: inline-block;
+        min-height: 375px;
+        margin: 20px;
+        padding: 10px 10px 15px 10px;
+        text-align: center;
+        width: 375px;
+
+        img {
+            box-sizing: border-box;
+            height: 300px;
+            object-fit: cover;
+            padding: 5px;
+            width: 100%;
+        }
+
+        p {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        hr {
+            color: $light-grey;
+            text-decoration: none;
+            width: 40%;
+        }
+
+        h4 {
+            color: $primary-orange;
+            text-decoration: none;
+        }
+    }
+}

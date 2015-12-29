@@ -27,12 +27,22 @@ if (window.location.pathname.split('/')[1] === "recipe") {
 
 function displayRecipesGallery (recipes) {
     for (var i=0; i < recipes.length; i++) {
-        var galleryItem = "<a href='/recipe/"+ recipes[i].id + "'><div><p>" + recipes[i].title + "</p></div></a>";
+        var recipeImage;
+        var galleryItem;
+
+        if (recipes[i].image) {
+            recipeImage = recipes[i].image;
+        } else {
+            recipeImage = "/static/public/images/donuts.png";
+        }
+
+        galleryItem = "<a href='/recipe/"+ recipes[i].id + "'><div class='recipe-block'><p>" + recipes[i].title + "</p></div></a>";
+
         $("#recipes-gallery").append(galleryItem);
     }
 }
 
 function displayRecipe (recipeData) {
-    var recipeContent = "<div><h1>" + recipeData.title + "</h1><p>" + recipeData.author + "</p><img src='" + recipeData.image + "'<p>" + recipeData.background + "</p><p>" + recipeData.time + "</p><p>" + recipeData.ingredients + "</p><p>" + recipeData.directions + "</p></div>";
+    var recipeContent = "<div><h1>" + recipeData.title + "</h1><p>" + recipeData.author + "</p><img src='" + recipeData.image + "'><p>" + recipeData.background + "</p><p>" + recipeData.time + "</p><p>" + recipeData.ingredients + "</p><p>" + recipeData.directions + "</p></div>";
     $("#recipe-content").append(recipeContent);
 }

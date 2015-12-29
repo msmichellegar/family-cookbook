@@ -3,10 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Barron Family Cookbook</title>
+        <link rel="stylesheet" href="/static/public/css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <p>Hello Barrons!</p>
-        <section id="recipes-gallery"></section>
+        <nav>
+            <h1>Barron Family Cookbook</h1>
+        </nav>
+        <header>
+            <div class="button">
+                <button>Browse Favourites</button>
+            </div>
+        </header>
+        <section class="title">
+            <a href="/add"><button>+ Add a Recipe</button></a>
+            <h2>Barron Recipes</h2>
+        </section>
+        <section class="recipes-gallery" id="recipes-gallery">
+            <a href="/recipe/lfo76b0rudi"><div class="recipe-block">
+                <img src="/static/public/images/donuts.png">
+                <p>Maree's Lasagne</p>
+            </div></a>
+            <a href="/recipe/lfo76b0rudi"><div class="recipe-block">
+                <img src="/static/public/images/donuts.png">
+                <p>Peter's Tandoori Chicken</p>
+            </div></a>
+            <a href="/recipe/lfo76b0rudi"><div class="recipe-block">
+                <img src="/static/public/images/donuts.png">
+                <p>Grandma's Peppermint Slice</p>
+            </div></a>
+        </section>
     </body>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/static/public/js/script.js"></script>

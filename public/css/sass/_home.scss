@@ -1,0 +1,124 @@
+h1 {
+    font-family: 'Grandesign-Neue-Roman-Bold';
+}
+
+h2, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    text-align: center;
+
+    h1 {
+        color: #EF4229;
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin: 20px 10px 20px 10px;
+        text-transform: lowercase;
+    }
+
+    p {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+}
+
+header {
+    align-items: flex-end;
+    background-image: url('http://www.hugscafe.org/wp-content/uploads/2014/05/157_1background3.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    height: 500px;
+    padding: 0 0 100px 0;
+    text-align: center;
+
+    .button {
+        background-color: #333333;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 70px;
+        // margin-top: 350px;
+        margin: 0 auto;
+        padding: 10px;
+        width: 270px;
+
+        button {
+            background-color: #333333;
+            border: 1px solid white;
+            color: #FFF;
+            cursor: pointer;
+            height: 50px;
+            font-size: 20px;
+            font-style: italic;
+            text-transform: lowercase;
+            width: 250px;
+        }
+    }
+
+}
+
+.title {
+    box-sizing: border-box;
+    height: 75px;
+    text-align: center;
+    padding: 50px 100px 0 50px;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    button {
+        background-color: lightblue;
+        border: solid 1px lightgrey;
+        clear: both;
+        display: block;
+        float: right;
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+        }
+
+    button:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
+.recipes-gallery {
+    padding: 50px;
+    text-align: center;
+}
+
+.recipe-block {
+    @include box-shadow(0 4px 0 rgba(0,0,0,.1));
+    box-sizing: border-box;
+    border: solid 1px lightgrey;
+    display: inline-block;
+    height: 425px;
+    margin: 20px;
+    padding: 10px 10px 15px 10px;
+    text-align: center;
+    width: 375px;
+
+    img {
+        border: solid 1px lightgrey;
+        box-sizing: border-box;
+        height: 300px;
+        object-fit: cover;
+        padding: 5px;
+        width: 100%;
+    }
+
+    p {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 15px;
+        text-decoration: none;
+    }
+}
+
+.recipe-block:hover {
+    transform: scale(1.01);
+}

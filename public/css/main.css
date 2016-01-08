@@ -195,6 +195,27 @@ header {
     .recipe .title h4 {
       color: #8BC13F;
       padding-top: 10px; }
+    .recipe .title div {
+      display: inline-block; }
+    .recipe .title .button {
+      background-color: #333333;
+      box-sizing: border-box;
+      cursor: pointer;
+      float: right;
+      height: 60px;
+      margin: 0 auto;
+      padding: 10px;
+      width: 200px; }
+      .recipe .title .button button {
+        background-color: #333333;
+        border: 1px solid white;
+        color: #FFF;
+        cursor: pointer;
+        height: 40px;
+        font-size: 18px;
+        font-style: italic;
+        text-transform: lowercase;
+        width: 180px; }
   .recipe .content-row-one {
     display: flex;
     justify-content: space-between; }
@@ -204,7 +225,7 @@ header {
       height: 400px;
       margin-bottom: 30px;
       object-fit: cover;
-      width: 60%; }
+      width: 100%; }
     .recipe .content-row-one .background {
       box-sizing: border-box;
       border: 2px solid #B0B0B0;

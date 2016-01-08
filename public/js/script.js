@@ -77,9 +77,11 @@ function displayRecipe (recipeData) {
         recipeImage = "/static/public/images/donuts.png";
     }
 
-    recipeContent = "<div class='recipe'><div class='title'><h2>" + recipeData.title + "</h2><h4>Author: " + recipeData.author + " | Cooking time: " + recipeData.time + "</h4></div><div class='content-row-one'><img src='" + recipeImage + "'><div class='background'><h2>Background</h2><p>" + recipeData.background + "</p></div></div><div class='directions'><h2>Ingredients</h2><p class='ingredients'>" + recipeData.ingredients + "</p><h2>Directions</h2><p>" + recipeData.directions + "</p></div></div>";
+    recipeContent = "<div class='recipe'><div class='title'><div><h2>" + recipeData.title + "</h2><h4>Author: " + recipeData.author + " | Cooking time: " + recipeData.time + "</h4></div><div class='button'><a href='/recipe/" + recipeData.id + "/update'><button><i>Edit Recipe</i></button></a></div></div><div class='content-row-one'><img class='image' src='" + recipeImage + "'><div class='background' style='display: none;'><h2>Background</h2><p>" + recipeData.background + "</p></div></div><div class='directions'><h2>Ingredients</h2><p class='ingredients'>" + recipeData.ingredients + "</p><h2>Directions</h2><p>" + recipeData.directions + "</p></div></div>";
 
     $("#recipe-content").append(recipeContent);
+
+    hideOrDisplayBackground(recipeData);
 }
 
 function fillUpdateForm (recipeData) {
@@ -92,4 +94,12 @@ function fillUpdateForm (recipeData) {
     $("#directions").val(recipeData.directions);
     $("#image").val(recipeData.image);
 
+}
+
+function hideOrDisplayBackground (recipeData) {
+
+    if (recipeData.background) {
+        $('.image').css('width', '60%');
+        $('.background').css('display', 'block');
+    }
 }

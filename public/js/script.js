@@ -25,6 +25,20 @@ if (window.location.pathname.split('/')[1] === "recipe") {
 
 }
 
+
+if (window.location.pathname.split('/')[3] === "update") {
+    var recipeId = window.location.pathname.split('/')[2];
+
+    // get recipe data
+    $.ajax('/api/recipe/get/' + recipeId, {
+        success: function(recipeData) {
+            // fill form with recipe data
+            fillUpdateForm(recipeData);
+        }
+    });
+
+}
+
 function displayRecipesGallery (recipes) {
 
     $("#loading-gif").remove();
@@ -66,4 +80,16 @@ function displayRecipe (recipeData) {
     recipeContent = "<div class='recipe'><div class='title'><h2>" + recipeData.title + "</h2><h4>Author: " + recipeData.author + " | Cooking time: " + recipeData.time + "</h4></div><div class='content-row-one'><img src='" + recipeImage + "'><div class='background'><h2>Background</h2><p>" + recipeData.background + "</p></div></div><div class='directions'><h2>Ingredients</h2><p class='ingredients'>" + recipeData.ingredients + "</p><h2>Directions</h2><p>" + recipeData.directions + "</p></div></div>";
 
     $("#recipe-content").append(recipeContent);
+}
+
+function fillUpdateForm (recipeData) {
+
+    $("#title").val(recipeData.title);
+    $("#author").val(recipeData.author);
+    $("#background").val(recipeData.background);
+    $("#ingredients").val(recipeData.ingredients);
+    $("#time").val(recipeData.time);
+    $("#directions").val(recipeData.directions);
+    $("#image").val(recipeData.image);
+
 }

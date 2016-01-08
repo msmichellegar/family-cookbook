@@ -155,7 +155,7 @@ header {
     width: 375px; }
     @media (max-width: 650px) {
       .recipes-gallery .recipe-block {
-        margin: 10px 5px 10px 5px;
+        margin: 10px 0;
         padding: 0; } }
     .recipes-gallery .recipe-block img {
       box-sizing: border-box;

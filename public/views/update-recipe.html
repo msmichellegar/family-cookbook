@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Barron Family Cookbook</title>
+        <link rel="stylesheet" href="/static/public/css/main.css">
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0"/>
+        <link rel="shortcut icon" href="/static/public/images/favicon.ico" />
+    </head>
+    <body>
+        <nav>
+            <a href="/"><h1>Barron Family Cookbook</h1></a>
+        </nav>
+        <section class="recipe-form">
+            <form method="post" action="/api/recipe/update">
+                <label>Title:</label>
+                <input type="text" name="title" id="title"></input>
+                <label>Author:</label>
+                <input type="text" name="author" id="author"></input>
+                <label>Background:</label>
+                <input type="text" name="background" id="background"></input>
+                <label>Ingredients:</label>
+                <textarea type="text" name="ingredients" id="ingredients"></textarea>
+                <label>Cooking Time:</label>
+                <input type="text" name="time" id="time"></input>
+                <label>Directions:</label>
+                <textarea type="text" name="directions" id="directions"></textarea>
+                <label>Image URL:</label>
+                <input type="text" name="image" id="image"></input>
+                <div><input type="submit" value="update"></div>
+            </form>
+        </section>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="/static/public/js/script.js"></script>
+    </body>
+</html>

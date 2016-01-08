@@ -138,7 +138,7 @@ header {
   text-align: center; }
   @media (max-width: 650px) {
     .recipes-gallery {
-      padding: 30px 5px; } }
+      padding: 30px 0; } }
   .recipes-gallery h2 {
     font-size: 40px;
     padding-bottom: 15px; }

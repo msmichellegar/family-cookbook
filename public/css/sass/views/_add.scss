@@ -1,6 +1,10 @@
 .recipe-form {
-    margin: 50px auto;
+    margin: 0 auto 50px auto;
     width: 70%;
+
+    @media (max-width: 750px) {
+        width: 95%;
+    }
 
     label, input, textarea {
         display: block;
@@ -14,6 +18,14 @@
         margin-bottom: 20px;
         padding: 5px;
         width: 500px;
+
+        @media (max-width: 750px) {
+            width: 400px;
+        }
+
+        @media (max-width: 500px) {
+            width: 300px;
+        }
     }
 
     textarea {

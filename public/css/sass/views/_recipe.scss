@@ -1,6 +1,14 @@
 .recipe {
-    margin: 50px auto;
+    margin: 0 auto 50px auto;
     width: 70%;
+
+    @media (max-width: 1050px) {
+        width: 90%;
+    }
+
+    @media (max-width: 725px) {
+        width: 100%;
+    }
 
     .title {
         border: 2px solid $primary-green;
@@ -8,6 +16,17 @@
         margin-bottom: 30px;
         padding: 50px 100px;
         text-align: left;
+
+        @media (max-width: 1050px) {
+            padding: 50px;
+        }
+
+        @media (max-width: 725px) {
+            border-left: 0px;
+            border-right: 0px;
+            padding: 30px;
+            text-align: center;
+        }
 
         h2 {
             display: block;
@@ -33,6 +52,12 @@
             padding: 10px;
             width: 200px;
 
+            @media (max-width: 725px) {
+                display: block;
+                float: none;
+                margin-top: 20px;
+            }
+
             button {
                 background-color: #333333;
                 border: 1px solid white;
@@ -51,6 +76,10 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 875px) {
+            display: block;
+        }
+
         img {
             border: 2px solid $black;
             box-sizing: border-box;
@@ -58,6 +87,20 @@
             margin-bottom: 30px;
             object-fit: cover;
             width: 100%;
+
+            @media (max-width: 725px) {
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+        }
+
+        img.with-background {
+            width: 60%;
+
+            @media (max-width: 875px) {
+                width: 100%;
+            }
         }
 
         .background {
@@ -67,6 +110,16 @@
             padding: 30px;
             vertical-align: top;
             width: 38%;
+
+            @media (max-width: 875px) {
+                border: 2px solid $primary-green;
+                width: 100%;
+            }
+
+            @media (max-width: 725px) {
+                border-left: 0px;
+                border-right: 0px;
+            }
 
             h2 {
                 font-size: 26px;
@@ -83,6 +136,11 @@
     .directions {
         border: 2px solid $light-grey;
         padding: 30px;
+
+        @media (max-width: 725px) {
+            border-left: 0px;
+            border-right: 0px;
+        }
 
         h2 {
             font-size: 26px;

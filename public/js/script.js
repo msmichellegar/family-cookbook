@@ -109,6 +109,10 @@ function displayRecipe (recipeData) {
 
 function fillUpdateForm (recipeData) {
 
+    // recipeData.ingredients = recipeData.ingredients.replace('<br>', '/\r?\n/g');
+    // recipeData.background = recipeData.background.replace('<br>', /\r?\n/g);
+    // recipeData.directions = recipeData.directions.replace('<br>', /\r?\n/g);
+
     $("#title").val(recipeData.title);
     $("#author").val(recipeData.author);
     $("#background").val(recipeData.background);

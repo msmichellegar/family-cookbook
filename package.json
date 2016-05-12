@@ -25,6 +25,7 @@
     "redis": "^2.4.2"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
     "tape": "^4.3.0"
   }
 }

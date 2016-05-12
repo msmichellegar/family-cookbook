@@ -19,4 +19,4 @@ Stretch goals:
 
 ## Timeline
 
-Version 1.0 is now live! Check it out at [BarronFamilyCookbook.com](www.barronfamilycookbook.com).
+Version 1.0 is now live! Check it out at [BarronFamilyCookbook.com](http://www.barronfamilycookbook.com).
